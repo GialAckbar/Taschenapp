@@ -1,0 +1,17 @@
+<resources>
+    <!-- Preference -->
+    <string-array name="first_function_entries">
+        <item>@string/menu_datetimecalc</item>
+        <item>@string/menu_generators</item>
+    </string-array>
+
+    <string-array name="first_function_values">
+        <item>nav_datetimecalc</item>
+        <item>nav_generators</item>
+    </string-array>
+
+    <string-array name="arithmetic_entries">
+        <item>@string/arithmetic_add</item>
+        <item>@string/arithmetic_subtract</item>
+    </string-array>
+</resources>

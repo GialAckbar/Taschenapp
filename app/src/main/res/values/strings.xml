@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">Taschenapp</string>
+
+    <!-- Menus -->
+    <string name="action_settings">Einstellungen</string>
+    <string name="action_reset">Zurücksetzen</string>
+    <string name="menu_datetimecalc">Datum-/Zeit Rechner</string>
+    <string name="menu_generators">Generatoren</string>
+
+    <!-- DateTimeCalc -->
+    <string name="start_date">Start-Datum:\n\n</string>
+    <string name="start_time_prefix">Start-Uhrzeit:\n\n</string>
+    <string name="start_time_suffix">Uhr</string>
+    <string name="select_arithmetic">Rechenart auswählen:</string>
+    <string name="arithmetic_add">Hinzufügen (+)</string>
+    <string name="arithmetic_subtract">Abziehen (-)</string>
+    <string name="continue_results">Mit Ergebnis weiterrechnen</string>
+    <string name="add_to_calendar">Ergebnis zum Kalender hinzufügen</string>
+    <string name="years">Jahre</string>
+    <string name="months">Monate</string>
+    <string name="weeks">Wochen</string>
+    <string name="days">Tage</string>
+    <string name="hours">Stunden</string>
+    <string name="mins">Minuten</string>
+
+    <!-- Preference Titles -->
+    <string name="global_header">Allgemein</string>
+
+    <!-- Global Preferences -->
+    <string name="first_function_on_start">Erste Funktion beim Öffnen der App</string>
+</resources>

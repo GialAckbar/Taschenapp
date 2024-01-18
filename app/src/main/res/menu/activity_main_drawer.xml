@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_datetimecalc"
+            android:icon="@drawable/ic_menu_datetimecalc"
+            android:title="@string/menu_datetimecalc" />
+        <item
+            android:id="@+id/nav_generators"
+            android:icon="@drawable/ic_menu_generators"
+            android:title="@string/menu_generators" />
+    </group>
+</menu>

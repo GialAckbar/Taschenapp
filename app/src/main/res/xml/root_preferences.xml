@@ -1,0 +1,15 @@
+<PreferenceScreen xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <PreferenceCategory app:title="@string/global_header">
+
+        <ListPreference
+            app:defaultValue="nav_datetimecalc"
+            app:entries="@array/first_function_entries"
+            app:entryValues="@array/first_function_values"
+            app:key="firstFunction"
+            app:title="@string/first_function_on_start"
+            app:useSimpleSummaryProvider="true" />
+
+    </PreferenceCategory>
+
+</PreferenceScreen>

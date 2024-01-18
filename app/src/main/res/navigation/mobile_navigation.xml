@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation">
+
+    <navigation android:id="@+id/navigation"
+        app:startDestination="@id/nav_datetimecalc">
+        <fragment
+            android:id="@+id/nav_datetimecalc"
+            android:name="com.strese.pocketapp.ui.datetimecalc.DateTimeCalcFragment"
+            android:label="@string/menu_datetimecalc"
+            tools:layout="@layout/fragment_date_time_calc" />
+        <fragment
+            android:id="@+id/nav_generators"
+            android:name="com.strese.pocketapp.ui.generators.GeneratorsFragment"
+            android:label="@string/menu_generators"
+            tools:layout="@layout/fragment_generators" />
+        <action
+            android:id="@+id/action_to_settings"
+            app:destination="@id/frag_settings" />
+    </navigation>
+    <fragment
+        android:id="@+id/frag_settings"
+        android:name="com.strese.pocketapp.SettingsFragment"
+        android:label="@string/action_settings" >
+        <action
+            android:id="@+id/action_settings_to_navigation"
+            app:destination="@id/navigation" />
+    </fragment>
+</navigation>
