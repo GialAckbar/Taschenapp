@@ -1,4 +1,4 @@
-package com.strese.pocketapp.ui.generators
+package com.strese.pocketapp.ui.randomizer
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -6,17 +6,17 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
-import com.strese.pocketapp.databinding.FragmentGeneratorsBinding
+import com.strese.pocketapp.databinding.FragmentRandomizerBinding
 
-class GeneratorsFragment : Fragment() {
+class RandomizerFragment : Fragment() {
 
-    private var _binding: FragmentGeneratorsBinding? = null
+    private var _binding: FragmentRandomizerBinding? = null
     private val binding get() = _binding!!
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View {
-        val generatorsViewModel = ViewModelProvider(this)[GeneratorsViewModel::class.java]
+        val randomizerViewModel = ViewModelProvider(this)[RandomizerViewModel::class.java]
 
-        _binding = FragmentGeneratorsBinding.inflate(inflater, container, false)
+        _binding = FragmentRandomizerBinding.inflate(inflater, container, false)
         val root: View = binding.root
 
         return root

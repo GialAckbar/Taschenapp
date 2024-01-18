@@ -29,7 +29,7 @@ class MainActivity : AppCompatActivity() {
         setSupportActionBar(binding.appBarMain.toolbar)
 
         appBarConfiguration = AppBarConfiguration(setOf(
-            R.id.nav_datetimecalc, R.id.nav_generators
+            R.id.nav_datetimecalc, R.id.nav_randomizer
         ), binding.drawerLayout)
 
         val navController = findNavController(R.id.nav_host_fragment_content_main)

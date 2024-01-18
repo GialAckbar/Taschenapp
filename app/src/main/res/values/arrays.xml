@@ -2,12 +2,12 @@
     <!-- Preference -->
     <string-array name="first_function_entries">
         <item>@string/menu_datetimecalc</item>
-        <item>@string/menu_generators</item>
+        <item>@string/menu_randomizer</item>
     </string-array>
 
     <string-array name="first_function_values">
         <item>nav_datetimecalc</item>
-        <item>nav_generators</item>
+        <item>nav_randomizer</item>
     </string-array>
 
     <string-array name="arithmetic_entries">

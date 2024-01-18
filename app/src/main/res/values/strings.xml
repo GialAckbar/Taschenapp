@@ -5,7 +5,7 @@
     <string name="action_settings">Einstellungen</string>
     <string name="action_reset">Zurücksetzen</string>
     <string name="menu_datetimecalc">Datum-/Zeit Rechner</string>
-    <string name="menu_generators">Generatoren</string>
+    <string name="menu_randomizer">Zufallsgeneratoren</string>
 
     <!-- DateTimeCalc -->
     <string name="start_date">Start-Datum:\n\n</string>

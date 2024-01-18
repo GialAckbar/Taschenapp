@@ -9,8 +9,8 @@
             android:icon="@drawable/ic_menu_datetimecalc"
             android:title="@string/menu_datetimecalc" />
         <item
-            android:id="@+id/nav_generators"
-            android:icon="@drawable/ic_menu_generators"
-            android:title="@string/menu_generators" />
+            android:id="@+id/nav_randomizer"
+            android:icon="@drawable/ic_menu_randomizer"
+            android:title="@string/menu_randomizer" />
     </group>
 </menu>
