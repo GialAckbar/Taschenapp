@@ -8,17 +8,20 @@ import java.util.Calendar
 import java.util.Locale
 
 class DateTimeCalcViewModel : ViewModel() {
-    private lateinit var startCalendar: Calendar
-    private lateinit var endCalendar: Calendar
-
     private val dateFormat = SimpleDateFormat("dd.MM.yyyy", Locale.getDefault())
     private val timeFormat = SimpleDateFormat("HH:mm ", Locale.getDefault())
+
+    private var _startCalendar: Calendar? = null
+    private var _endCalendar: Calendar? = null
 
     private val _startDateLiveData = MutableLiveData<String>()
     private val _startTimeLiveData = MutableLiveData<String>()
     private val _endDateLiveData = MutableLiveData<String>()
     private val _endTimeLiveData = MutableLiveData<String>()
     private val _addUpLiveData = MutableLiveData<Boolean>()
+
+    val startCalendar get() = _startCalendar!!
+    val endCalendar get() = _endCalendar!!
 
     val startDateLiveData: LiveData<String> = _startDateLiveData
     val startTimeLiveData: LiveData<String> = _startTimeLiveData
@@ -29,8 +32,8 @@ class DateTimeCalcViewModel : ViewModel() {
     init { setInitValues() }
 
     fun setInitValues() {
-        startCalendar = Calendar.getInstance()
-        endCalendar = startCalendar.clone() as Calendar
+        _startCalendar = Calendar.getInstance()
+        _endCalendar = startCalendar.clone() as Calendar
 
         _startDateLiveData.value = dateFormat.format(startCalendar.time)
         _startTimeLiveData.value = timeFormat.format(startCalendar.time)
@@ -72,19 +75,11 @@ class DateTimeCalcViewModel : ViewModel() {
         endCalendar.timeInMillis = timeInMillis
 
         if (timeInMillis <= DateTimeCalcConstants.LOWER_TIME_LIMIT) {
-            _endDateLiveData.value = "\uD83D\uDC80"
+            _endDateLiveData.value = "\uD83D\uDC80" // Skull emoji
         } else {
             _endDateLiveData.value = dateFormat.format(endCalendar.time)
         }
 
         _endTimeLiveData.value = timeFormat.format(endCalendar.time)
-    }
-
-    fun getStartCalendar(): Calendar {
-        return startCalendar
-    }
-
-    fun getEndCalendar(): Calendar {
-        return endCalendar
     }
 }

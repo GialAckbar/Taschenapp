@@ -130,7 +130,7 @@ class DateTimeCalcFragment : Fragment() {
     }
 
     private fun showDatePicker(dateTimeCalcViewModel: DateTimeCalcViewModel) {
-        val calendar = dateTimeCalcViewModel.getStartCalendar()
+        val calendar = dateTimeCalcViewModel.startCalendar
 
         val year = calendar.get(Calendar.YEAR)
         val month = calendar.get(Calendar.MONTH)
@@ -143,7 +143,7 @@ class DateTimeCalcFragment : Fragment() {
     }
 
     private fun showTimePicker(dateTimeCalcViewModel: DateTimeCalcViewModel) {
-        val calendar = dateTimeCalcViewModel.getStartCalendar()
+        val calendar = dateTimeCalcViewModel.startCalendar
 
         val hour = calendar.get(Calendar.HOUR_OF_DAY)
         val min = calendar.get(Calendar.MINUTE)
@@ -193,7 +193,7 @@ class DateTimeCalcFragment : Fragment() {
     }
 
     private fun continueWithResults(dateTimeCalcViewModel: DateTimeCalcViewModel) {
-        val endCalendar = dateTimeCalcViewModel.getEndCalendar()
+        val endCalendar = dateTimeCalcViewModel.endCalendar
 
         val year = endCalendar.get(Calendar.YEAR)
         val month = endCalendar.get(Calendar.MONTH)
@@ -209,7 +209,7 @@ class DateTimeCalcFragment : Fragment() {
     }
 
     private fun startCalendarContract(dateTimeCalcViewModel: DateTimeCalcViewModel) {
-        val beginTime = dateTimeCalcViewModel.getEndCalendar().timeInMillis
+        val beginTime = dateTimeCalcViewModel.endCalendar.timeInMillis
         val endTime = beginTime + DateTimeCalcConstants.HOUR_IN_MS
 
         val intent = Intent(Intent.ACTION_INSERT)
